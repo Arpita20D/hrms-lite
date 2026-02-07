@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-router-dom';
+import Attendance from './components/Attendance';
 import Dashboard from './components/Dashboard';
 import Employees from './components/Employees';
-import Attendance from './components/Attendance';
 import './App.css';
 
 function App() {
