@@ -59,11 +59,11 @@ function Employees() {
     }
     
     if (!formData.email.trim()) {
-      errors.email = 'Email is required';
-    } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email)) {
-      errors.email = 'Invalid email format';
-    }
-    
+  errors.email = "Email is required";
+} else if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(formData.email)) {
+  errors.email = "Invalid email format";
+}
+
     if (!formData.department.trim()) {
       errors.department = 'Department is required';
     }
