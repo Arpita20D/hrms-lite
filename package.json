@@ -11,7 +11,9 @@
   "description": "A lightweight, full-stack web application for managing employee records and tracking daily attendance.",
   "main": "server.js",
   "scripts": {
-  "start": "node server.js"
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test"
 },
   "repository": {
     "type": "git",
