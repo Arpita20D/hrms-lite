@@ -14,9 +14,9 @@ const api = axios.create({
 // Employee APIs
 export const employeeAPI = {
   getAll: () => api.get('/employees'),
-  getById: (id) => api.get(/employees/${id}),
+  getById: (id) => api.get(`/employees/${id}`),
   create: (data) => api.post('/employees', data),
-  delete: (id) => api.delete(/employees/${id}),
+  delete: (id) => api.delete(`/employees/${id}`),
 };
 
 // Attendance APIs
@@ -26,7 +26,7 @@ export const attendanceAPI = {
     return api.get('/attendance', { params });
   },
   mark: (data) => api.post('/attendance', data),
-  getSummary: (employeeId) => api.get(/attendance/summary/${employeeId}),
+  getSummary: (employeeId) => api.get(`/attendance/summary/${employeeId}`),
 };
 
 export default api;
